@@ -123,47 +123,6 @@ namespace ArraysRotation
             return l;
         }
 
-        //public static int[] ArrayRotateLeft2(int[] a, int d)
-        //{
-        //    var n = a.Length;
-
-        //    int t = a[0];
-        //    for (int i = 0; i < n; i++)
-        //    {
-        //        int j = (i + n - d) % n;
-        //        a[i] = a[j];
-        //    }
-
-        //    return a;
-        //}
-
-        // TODO: non working method...
-        //public static int[] ArrayRotateLeftShift(int[] a, int shift)
-        //{
-        //    var length = a.Length;
-        //    int t;
-
-        //    for (int i = 0; i < length; i++)
-        //    {
-        //        if (i + shift >= length)
-        //        {
-        //            t = a[i];
-        //            a[i] = a[i + shift - length];
-        //            a[i + shift - length] = t;
-        //        }
-        //        else
-        //        {
-        //            t = a[i];
-        //            a[i] = a[i + shift];
-        //            a[i + shift] = t;
-        //        }
-        //    }
-
-        //    return a;
-        //}
-
-
-
 
     }
 }
