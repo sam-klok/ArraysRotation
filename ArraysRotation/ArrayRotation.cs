@@ -18,7 +18,7 @@ namespace ArraysRotation
 
             //var b = ArrayRotateLeft(a, shift);
             //var b = ArrayRotateLeftWithCopyToSecondArray(a, shift);
-            var b = ArrayRotateLeftWithTempArray(a, shift);
+            var b = ArrayRotateLeftWithSmallTempArray(a, shift);
             
 
             Utilities.PrintSingleDimentionalArray(b, "Shifted array: ");
@@ -48,8 +48,11 @@ namespace ArraysRotation
             return b;
         }
 
-
-        public static int[] ArrayRotateLeftWithTempArray(int[] a, int s)
+        // fast and beautiful method
+        // reusing the same array
+        // using small temp array to store replaced values when unavoidable
+        // a - array, s - shift 
+        public static int[] ArrayRotateLeftWithSmallTempArray(int[] a, int s)
         {
             var l = a.Length;
             var t = new int[s]; // temp array with size s = shift
@@ -69,8 +72,9 @@ namespace ArraysRotation
             return a;
         }
 
-        // same array, shifting everything several times by one
-        // works, simple, but not the fastest
+        // using the same same array, and only one temp variable
+        // shifting everything several times by one
+        // works, simple, but slow
         public static int[] ArrayRotateLeftCyclical(int[] a, int shift)
         {
             var length = a.Length;

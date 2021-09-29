@@ -12,7 +12,7 @@ namespace ArrayXUnitTestProject
         {
             var a = Utilities.CreateSingleDimentionalArray(999999999, 9999999);
 
-            var t1 = Time(() => ArrayRotation.ArrayRotateLeftWithTempArray(a, 15));
+            var t1 = Time(() => ArrayRotation.ArrayRotateLeftWithSmallTempArray(a, 15));
             var t2 = Time(() => ArrayRotation.ArrayRotateLeftWithCopyToSecondArray(a, 15));
             var t3 = Time(() => ArrayRotation.ArrayRotateLeftCyclical(a, 15));
 
