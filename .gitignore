@@ -3,3 +3,7 @@
 ################################################################################
 
 /ArraysRotation/bin/Debug/netcoreapp3.1
+/ArraysRotation/obj
+/ArrayXUnitTestProject/bin/Debug/netcoreapp3.1
+/ArrayXUnitTestProject/obj
+/.vs/ArraysRotation/v16/TestStore/0

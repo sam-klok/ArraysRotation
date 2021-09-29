@@ -6,7 +6,7 @@ namespace ArraysRotation
     {
         static void Main(string[] args)
         {
-            ArrayLeftRotation.ArrayRotateLeftDemo();
+            ArrayRotation.ArrayRotateLeftDemo();
 
             Console.WriteLine();
             Console.WriteLine("Press any key..");
